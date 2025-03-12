@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+.header {
+    @apply p-4 mb-6;
+}
+
+.search-input {
+    @apply px-3 py-2 bg-slate-800 rounded-md text-white border-none focus:ring-2 focus:ring-blue-500;
+}
+
+.card {
+    @apply bg-slate-800 rounded-lg p-5 shadow-lg;
+}
+
+.chart-container {
+    @apply h-96 bg-slate-800 rounded-lg p-5 shadow-lg;
+}
+
+.table-container {
+    @apply bg-slate-800 rounded-lg p-5 shadow-lg overflow-x-auto;
+}
+
+.table {
+    @apply min-w-full divide-y divide-slate-700;
+}
+
+.table th {
+    @apply px-4 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider;
+}
+
+.table td {
+    @apply px-4 py-4 whitespace-nowrap text-sm text-white;
+}
+
+.table tbody tr {
+    @apply border-b border-slate-700;
+}
+
+.sidebar {
+    @apply fixed top-0 left-0 h-screen w-64 bg-slate-800 p-4 transition-all duration-300 ease-in-out;
+}
+
+.sidebar-link {
+    @apply flex items-center p-2 my-1 rounded-md text-white hover:bg-slate-700 transition-colors;
+}
+
+.sidebar-link.active {
+    @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.main-content {
+    @apply ml-64 p-6;
+}
+
+.badge {
+    @apply px-2 py-1 text-xs rounded-full font-semibold;
+}
+
+.badge-success {
+    @apply bg-green-500 text-white;
+}
+
+.badge-warning {
+    @apply bg-yellow-500 text-white;
+}
+
+.badge-danger {
+    @apply bg-red-500 text-white;
+}
